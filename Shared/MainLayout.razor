@@ -1,15 +1,46 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="sidebar">
-    <NavMenu />
-</div>
-
-<div class="main">
-    <div class="top-row px-4">
-        <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
-    </div>
-
-    <div class="content px-4">
+<div class="color-line"></div>
+    <header class="header">
+        <div class="header__welcome">به ناحیه کاربری خودتون خوش آمدید</div>
+        <div class="header__dashbord">
+            <i class="fa fa-bars"></i>
+        </div>
+        <a class="header__link" data-toggle="tooltip" data-placement="top" title="خروج از سامانه">
+            <i class="fa fa-sign-in"></i>
+        </a>
+        <a class="header__link" data-toggle="tooltip" data-placement="top" title="خروج از سامانه">
+            <i class="fa fa-comment-o"></i>
+        </a>
+    </header>
+    <aside id="menu">
+        <div class="profile">
+            <img src="docs/img/profile.jpg" class="profile__img" />
+            <div class="profile__name">مهدی و مبین حسنی </div>
+            <div class="profile__desc">آخرین به روز رسانی پروفایل : 28 شهریور 98</div>
+        </div>
+        <ul class="link">
+            <li class="link__item">
+                <a href="#">داشبورد کاربر</a>
+            </li>
+            <li class="link__item hasSubmenu">
+                <a href="#" data-toggle="collapse" data-target="#submenu"> تنظیمات</a>
+                <ul id="submenu" class="collapse">
+                    <li class="link__item__submenu"><a href="#">ویرایش پروفایل</a></li>
+                    <li class="link__item__submenu"><a href="#">ویرایش پروفایل</a></li>
+                </ul>
+            </li>
+            <li class="link__item">
+                <a href="./login.html">صفحه لاگین</a>
+            </li>
+            <li class="link__item">
+                <a href="./register.html">صفحه ثبت نام</a>
+            </li>
+            <li class="link__item">
+                <a href="./notfound.html">صفحه  404</a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main">
         @Body
-    </div>
-</div>
+    </main>
