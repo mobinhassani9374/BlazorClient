@@ -1,7 +1,30 @@
 @page "/login"
 
-<h1>Login</h1>
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+<div class="login">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="login__box">
+            <div class="text-center">
+                <div class="login__box__icon">
+                <i class="fa fa-sign-in"></i>
+                </div>
+            </div>
+            <div class="login__box__title">ورود به سایت </div>
+            <div class="form-group">
+                <label>نام کاربری را وارد کنید </label>
+                <input type="text" class="form-control" placeholder="نام کاربری" />
+            </div>
+            <div class="form-group">
+                <label>رمز عبور را وارد کنید </label>
+                <input type="password" class="form-control" placeholder="رمز عبور" />
+            </div>
+            <div class="login__box__link">
+                <a href="#">ثبت نام</a>
+                <a href="#">فراموشی رمز عبور</a>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success btn-block">ورود</button>
+            </div>
+        </div>
+    </div>
+</div>
